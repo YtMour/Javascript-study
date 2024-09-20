@@ -5,6 +5,7 @@ a= 100;
 
 var b=200,c; //or   var b=200,c=30
 //默认值undefined
+//null和undefined没有方法调用
 
 let g = 300;
 
@@ -29,3 +30,15 @@ console.log(Number.MAX_VALUE);// 进行+-运算  也不会改变最大最小
 //大整数，任意长度，结尾带 n  结尾，只能与大整数相互运算
 let big = 9n;
 
+// BigInt  可以直接生成一个大整数
+
+//转字符串
+console.log(PI.toString());
+console.log(YT_MOUR.toString());
+
+//Symbol 创建唯一标识   不可枚举
+let s1 = Symbol();
+let s2 = Symbol();
+console.log(s1,typeof s);
+console.log(s2,typeof s);
+console.log(s1===s2);
