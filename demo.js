@@ -42,3 +42,17 @@ let s2 = Symbol();
 console.log(s1,typeof s);
 console.log(s2,typeof s);
 console.log(s1===s2);
+
+//字符转
+//空字符串 unll 纯空格 都会转换为0
+let c1="100";
+c1=Number(c1);
+console.log(c1+100);
+
+//遇到不是数字，舍去后面    111aaaa  转换后 111
+let d1=parseInt("111", 16);//可转换进制   默认10进制
+console.log(d1,typeof d1);
+
+
+let d2=parseFloat("100.8")//解析小数
+console.log(d2,typeof d2)
