@@ -56,3 +56,16 @@ console.log(d1,typeof d1);
 
 let d2=parseFloat("100.8")//解析小数
 console.log(d2,typeof d2)
+
+
+let t1 = 43;
+let day = t1 % 7;
+let x1= parseInt(t1 / 7);
+console.log(t1,"天","=",x1,"星期",day,"天")
+
+let t2 = 3661;
+let h = parseInt(t2 / 3600);
+let min =parseInt((t2-(h*3600)) / 60)
+let miao =parseInt((t2-(h*3600)) % 60)
+
+console.log(t2,"秒","=",h,"时",min,"分",miao,"秒")
