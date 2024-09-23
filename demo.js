@@ -69,3 +69,20 @@ let min =parseInt((t2-(h*3600)) / 60)
 let miao =parseInt((t2-(h*3600)) % 60)
 
 console.log(t2,"秒","=",h,"时",min,"分",miao,"秒")
+
+
+
+let x = 4;
+let y = (--x) + (x--) + (x * 10);
+// let y = A + B + C
+//       3/3 +  2/3 + 2 * 10
+//   3 + 3 + 2 * 10
+// x = 2, y = 26
+console.log(x, y);
+
+let a = 6;
+let b = 10;
+let c = a++ + b + ++a + b++ + ++b + a;
+//      7/6 + 10 + 8/8 + 11/10 + 12/12 + 8
+// 6 + 10 + 8 + 10 + 12 + 8 = 54
+console.log(c);
