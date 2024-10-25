@@ -156,15 +156,84 @@
 
 
 
-function func(a,b){
-  console.log(this,a,b);
+// function func(a,b){
+//   console.log(this,a,b);
+// }
+// func(100,200);
+// let obj1={xxx:300};
+// let newFunc=func.bind(obj1);
+// newFunc(400,500);
+
+// let newFunc2=func.bind(obj1,100);
+// newFunc2(300);
+
+
+//构造函数中 传递返回值  没有意义 不起作用
+// class Person{
+//   constructor(name,age){
+//     this.name=name;
+//     this.age=age;
+//   }
+// }
+//   let Person1=new Person('Tom',20);
+//   console.log(Person1);
+//   let Person2=new Person('Jerry',30);
+//   console.log(Person2);
+
+
+
+// class Person{
+//   //似有属性   #开头    必须先声明不可省略
+//   #name;
+//   #age =18;
+//   constructor(name,age){
+//     this.#name=name;
+//     this.#age=age;
+//   }
+//   getAge(){return this.#age;}
+//   setAge(age){
+//     if (age>=0 && age<=120){
+//     }else{
+//       console.log('年龄不合法');
+//       return;
+//     }
+//     this.#age=age;
+//   }
+//   getNmae(){return this.#name;}
+//   setNmae(name){this.#name=name;}
+
+
+// }
+//   let Person1=new Person('Tom',20);
+//   Person1.setAge(25);
+//   let age=Person1.getAge();
+//   console.log(Person1,age);
+//   let Person2=new Person('Jerry',30);
+//   console.log(Person2);
+
+
+
+//简写
+class Person{
+  //似有属性   #开头    必须先声明不可省略
+  #name;
+  #age =18;
+  constructor(name,age){
+    this.#name=name;
+    this.#age=age;
+  }
+  get age(){return this.#age;}
+  set age(age){
+    if (age>=0 && age<=120){
+    }else{
+      console.log('年龄不合法');
+      return;
+    }
+    this.#age=age;
+  }
+
 }
-func(100,200);
-let obj1={xxx:300};
-let newFunc=func.bind(obj1);
-newFunc(400,500);
+  let Person1=new Person('Tom',20);
+  Person1.age=25;
 
-let newFunc2=func.bind(obj1,100);
-newFunc2(300);
-
-
+  console.log(Person1.age);
