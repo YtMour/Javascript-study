@@ -56,11 +56,11 @@ import CryptoJS from 'crypto-js';
 
 
 
-let wordArray = CryptoJS.enc.Utf8.parse('ytmour');
-let b64 = CryptoJS.enc.Base64.stringify(wordArray);
-let b64_wordArray = CryptoJS.enc.Base64.parse(b64);
-let hex = CryptoJS.enc.Hex.stringify(b64_wordArray);
-console.log(b64, hex);
+// let wordArray = CryptoJS.enc.Utf8.parse('ytmour');
+// let b64 = CryptoJS.enc.Base64.stringify(wordArray);
+// let b64_wordArray = CryptoJS.enc.Base64.parse(b64);
+// let hex = CryptoJS.enc.Hex.stringify(b64_wordArray);
+// console.log(b64, hex);
 
 
 
@@ -78,20 +78,19 @@ console.log(b64, hex);
 // b'Wmprek1UbGxaamczTVE9PQ=='
 
 
-//let CryptoJS = require('./CryptoJS');
+
 // //let wordArray = CryptoJS.enc.Utf8.parse('ytmour');
-// //let wordArray = '7869616f6a69616e62616e67';
-// let wordArray = CryptoJS.enc.Hex.parse('7869616f6a69616e62616e67');
+// //let wordArray = '693e9af84d3dfcc71e640e005bdc5e2e';
+// let wordArray = CryptoJS.enc.Hex.parse('693e9af84d3dfcc71e640e005bdc5e2e');
 // console.log(CryptoJS.MD5(wordArray) + '');
 // console.log(CryptoJS.MD5(wordArray).toString(CryptoJS.enc.Base64));
-//
+
 // let hexMd5 = CryptoJS.MD5(wordArray) + '';
 // let yuanwen = CryptoJS.enc.Hex.parse(hexMd5);
 // console.log(CryptoJS.enc.Base64.stringify(yuanwen));
 // console.log(CryptoJS.MD5() + '');
 
 
-// let CryptoJS = require('./CryptoJS');
 // let wordArray = CryptoJS.enc.Utf8.parse('ytmour');
 // console.log(CryptoJS.SHA1(wordArray) + '');
 // console.log(CryptoJS.SHA256(wordArray) + '');
@@ -102,15 +101,15 @@ console.log(b64, hex);
 
 
 
-// let CryptoJS = require('./CryptoJS');
-// // console.log(CryptoJS.MD5('ytmour') + '');
-//
-// // let md5 = CryptoJS.algo.MD5.create();
-// // md5.update('ytmour');
-// // md5.update('liruyi');
-// // let cipherText = md5.finalize() + '';
-// // console.log(cipherText);
-//
+
+// console.log(CryptoJS.MD5('ytmour') + '');
+
+// let md5 = CryptoJS.algo.MD5.create();
+// md5.update('ytmour');
+// md5.update('liruyi');
+// let cipherText = md5.finalize() + '';
+// console.log(cipherText);
+
 // let SHA1 = CryptoJS.algo.SHA1.create();
 // SHA1.update('ytmour');
 // let cipherText = SHA1.finalize() + '';
@@ -121,16 +120,15 @@ console.log(b64, hex);
 
 
 
-// let CryptoJS = require('./CryptoJS');
-// console.log(CryptoJS.HmacMD5('', 'key') + '');
-// console.log(CryptoJS.HmacMD5('ytmour', 'key') + '');
-// console.log(CryptoJS.HmacSHA1('ytmour', 'key') + '');
-// console.log(CryptoJS.HmacSHA1('ytmour', 'key').toString(CryptoJS.enc.Base64));
-//
-//
-// let hmacSHA1 = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA1.create(), 'key');
-// hmacSHA1.update('ytmour');
-// console.log(hmacSHA1.finalize() + '');
+console.log(CryptoJS.HmacMD5('', 'key') + '');
+console.log(CryptoJS.HmacMD5('ytmour', 'key') + '');
+console.log(CryptoJS.HmacSHA1('ytmour', 'key') + '');
+console.log(CryptoJS.HmacSHA1('ytmour', 'key').toString(CryptoJS.enc.Base64));
+
+
+let hmacSHA1 = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA1.create(), 'key');
+hmacSHA1.update('ytmour');
+console.log(hmacSHA1.finalize() + '');
 
 
 
