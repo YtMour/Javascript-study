@@ -54,32 +54,32 @@ import CryptoJS from 'crypto-js';
 
 
 
-let plainText = CryptoJS.enc.Utf8.parse('ytmour');
-let key = CryptoJS.enc.Utf8.parse('12345678');
-//let key = CryptoJS.enc.Utf8.parse('03254769');
-let iv = CryptoJS.enc.Utf8.parse('88888888');
-var cfg = {
-    iv: iv,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7
-};
-let cipherObj = CryptoJS.DES.encrypt(plainText, key, cfg);
-//console.log(cipherObj.toString());
-console.log(cipherObj.ciphertext.toString());
-
-
-// // //9a41f0e3a278c6018bed9d770c482da2
+// let plainText = CryptoJS.enc.Utf8.parse('ytmour');
 // let key = CryptoJS.enc.Utf8.parse('12345678');
 // //let key = CryptoJS.enc.Utf8.parse('03254769');
 // let iv = CryptoJS.enc.Utf8.parse('88888888');
-let cipherText = CryptoJS.enc.Hex.parse('5fa39214f2feaa94').toString(CryptoJS.enc.Base64);
-var cfg = {
-    iv: iv,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7
-};
-let plainObj = CryptoJS.DES.decrypt(cipherText, key, cfg);
-console.log(plainObj.toString(CryptoJS.enc.Utf8));
+// var cfg = {
+//     iv: iv,
+//     mode: CryptoJS.mode.CBC,
+//     padding: CryptoJS.pad.Pkcs7
+// };
+// let cipherObj = CryptoJS.DES.encrypt(plainText, key, cfg);
+// //console.log(cipherObj.toString());
+// console.log(cipherObj.ciphertext.toString());
+
+
+// // // //9a41f0e3a278c6018bed9d770c482da2
+// // let key = CryptoJS.enc.Utf8.parse('12345678');
+// // //let key = CryptoJS.enc.Utf8.parse('03254769');
+// // let iv = CryptoJS.enc.Utf8.parse('88888888');
+// let cipherText = CryptoJS.enc.Hex.parse('5fa39214f2feaa94').toString(CryptoJS.enc.Base64);
+// var cfg = {
+//     iv: iv,
+//     mode: CryptoJS.mode.CBC,
+//     padding: CryptoJS.pad.Pkcs7
+// };
+// let plainObj = CryptoJS.DES.decrypt(cipherText, key, cfg);
+// console.log(plainObj.toString(CryptoJS.enc.Utf8));
 
 
 //00110001 00110010 00110011 00110100 00110101 00110110 00110111 00111000   12345678
